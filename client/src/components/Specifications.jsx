@@ -8,7 +8,7 @@ function Specifications() {
   const [rulesData, setRulesData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/settings')
+    axios.get('https://fogq-1.vercel.app/api/settings')
       .then(response => {
         setSettingsData(response.data);
       })
@@ -16,7 +16,7 @@ function Specifications() {
         console.error('Error fetching settings data:', err);
       });
 
-    axios.get('http://localhost:4000/api/advanced')
+    axios.get('https://fogq-1.vercel.app/api/advanced')
       .then(response => {
         setAdvancedData(response.data);
       })
@@ -24,7 +24,7 @@ function Specifications() {
         console.error('Error fetching advanced data:', err);
       });
 
-    axios.get('http://localhost:4000/api/rules')
+    axios.get('https://fogq-1.vercel.app/api/rules')
       .then(response => {
         setRulesData(response.data);
       })

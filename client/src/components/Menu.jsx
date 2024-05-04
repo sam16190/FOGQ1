@@ -6,7 +6,7 @@ const Menu = () => {
   const [navData, setNavData] = useState([]);
 
   useEffect(() => {
-      axios.get('http://localhost:4000/api/nav')
+      axios.get('https://fogq-1.vercel.app/api/nav')
           .then(response => {
               setNavData(response.data);
           })
