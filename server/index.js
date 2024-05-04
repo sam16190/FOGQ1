@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URL,{
-    useNewUrlParser:true,
+    // useNewUrlParser:true,
     //useUnifiedToplogy:true,
 }).then(()=>{
     console.log('DB connection successful');
